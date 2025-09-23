@@ -15152,6 +15152,11 @@ fieldset:disabled .btn {
     padding-left: 1rem !important;
   }
 
+  .px-md-3-75 {
+    padding-right: 0.75rem !important;
+    padding-left: 0.75rem !important;
+  }
+
   .px-md-4 {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
@@ -17054,6 +17059,11 @@ fieldset:disabled .btn {
   .px-lg-3 {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
+  }
+
+  .px-lg-3-75 {
+    padding-right: 0.75rem !important;
+    padding-left: 0.75rem !important;
   }
 
   .px-lg-4 {

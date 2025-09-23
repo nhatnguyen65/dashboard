@@ -110,30 +110,30 @@
   </aside>
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
     <!-- Navbar -->
-    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-3 border-radius-xl position-sticky mt-4 top-1 z-index-sticky blur shadow-blur left-auto bg-white" id="navbarBlur"
-      data-scroll="true" navbar-scroll="true">
+    <nav
+      class="navbar navbar-main navbar-expand-lg px-0 mx-3 border-radius-xl position-sticky mt-4 top-1 z-index-sticky blur shadow-blur left-auto bg-white"
+      id="navbarBlur" data-scroll="true">
       <div class="container-fluid py-1 px-3">
         <nav aria-label="breadcrumb">
-          <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+          <!-- <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
             <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
             <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Dashboard</li>
-          </ol>
+          </ol> -->
+          <h2 class="breadcrumb bg-transparent m-0 p-0 pt-1 fs-4">Admin</h2>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
             <div class="input-group input-group-outline">
-              <label class="form-label">Type here...</label>
+              <label class="form-label">Tìm kiếm...</label>
               <input type="text" class="form-control">
             </div>
           </div>
           <ul class="navbar-nav d-flex align-items-center  justify-content-end">
             <li class="nav-item d-flex align-items-center">
-              <a class="btn btn-outline-primary btn-sm mb-0 me-3" target="_blank"
-                href="https://www.creative-tim.com/builder?ref=navbar-material-dashboard">Online Builder</a>
+              <a class="btn btn-outline-primary btn-sm mb-0 me-3" target="_blank" href="#">Online</a>
             </li>
             <li class="mt-1">
-              <a class="github-button" href="https://github.com/creativetimofficial/material-dashboard"
-                data-icon="octicon-star" data-size="large" data-show-count="true"
+              <a class="github-button" href="#" data-icon="octicon-star" data-size="large" data-show-count="true"
                 aria-label="Star creativetimofficial/material-dashboard on GitHub">Star</a>
             </li>
             <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
@@ -241,92 +241,134 @@
     </nav>
     <!-- End Navbar -->
     <div class="container-fluid py-2">
+      <!-- List Statistical 1 -->
       <div class="row">
-        <div class="ms-3">
+        <!-- Titile Dashboard -->
+        <div class="ms-3 mt-2">
           <h3 class="mb-0 h4 font-weight-bolder">Dashboard</h3>
-          <p class="mb-4">
-            Check the sales, value and bounce rate by country.
+          <p class="mb-3">
+            Theo dõi doanh số bán hàng, giá trị đơn hàng.
           </p>
         </div>
-        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+        <!-- List -->
+        <div class="col-md-4 col-sm-6 px-lg-3-75 px-md-1 px-2 mb-lg-4 mb-md-2 mb-3">
           <div class="card">
             <div class="card-header p-2 ps-3">
               <div class="d-flex justify-content-between">
                 <div>
-                  <p class="text-sm mb-0 text-capitalize">Today's Money</p>
-                  <h4 class="mb-0">$53k</h4>
+                  <p class="text-sm mb-0 text-capitalize">Doanh Thu Hôm Nay</p>
+                  <h4 class="mb-0">53.000.000đ</h4>
                 </div>
                 <div class="icon icon-md icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-lg">
-                  <i class="material-symbols-rounded opacity-10">weekend</i>
+                  <i class="material-symbols-rounded opacity-10">payments</i>
                 </div>
               </div>
             </div>
             <hr class="dark horizontal my-0">
             <div class="card-footer p-2 ps-3">
-              <p class="mb-0 text-sm"><span class="text-success font-weight-bolder">+55% </span>than last week</p>
+              <p class="mb-0 text-sm"><span class="text-success font-weight-bolder">+55% </span>so với hôm qua</p>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+        <div class="col-md-4 col-sm-6 px-lg-3-75 px-md-1 px-2 mb-lg-4 mb-md-2 mb-3">
           <div class="card">
             <div class="card-header p-2 ps-3">
               <div class="d-flex justify-content-between">
                 <div>
-                  <p class="text-sm mb-0 text-capitalize">Today's Users</p>
-                  <h4 class="mb-0">2300</h4>
+                  <p class="text-sm mb-0 text-capitalize">Đơn Hàng Hôm Nay</p>
+                  <h4 class="mb-0">23</h4>
                 </div>
                 <div class="icon icon-md icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-lg">
-                  <i class="material-symbols-rounded opacity-10">person</i>
+                  <i class="material-symbols-rounded opacity-10">shopping_cart</i>
                 </div>
               </div>
             </div>
             <hr class="dark horizontal my-0">
             <div class="card-footer p-2 ps-3">
-              <p class="mb-0 text-sm"><span class="text-success font-weight-bolder">+3% </span>than last month</p>
+              <p class="mb-0 text-sm"><span class="text-success font-weight-bolder">+3% </span>so với hôm qua</p>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+        <div class="col-md-4 col-sm-6 px-lg-3-75 px-md-1 px-2 mb-lg-4 mb-md-2 mb-3">
           <div class="card">
             <div class="card-header p-2 ps-3">
               <div class="d-flex justify-content-between">
                 <div>
-                  <p class="text-sm mb-0 text-capitalize">Ads Views</p>
-                  <h4 class="mb-0">3,462</h4>
+                  <p class="text-sm mb-0 text-capitalize">Đơn Chờ Giao</p>
+                  <h4 class="mb-0">12</h4>
                 </div>
                 <div class="icon icon-md icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-lg">
-                  <i class="material-symbols-rounded opacity-10">leaderboard</i>
+                  <i class="material-symbols-rounded opacity-10">local_shipping</i>
                 </div>
               </div>
             </div>
             <hr class="dark horizontal my-0">
             <div class="card-footer p-2 ps-3">
-              <p class="mb-0 text-sm"><span class="text-danger font-weight-bolder">-2% </span>than yesterday</p>
+              <p class="mb-0 text-sm"><span class="text-success font-weight-bolder">+3 </span>đơn hôm nay</p>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-sm-6">
+        <div class="col-md-4 col-sm-6 px-lg-3-75 px-md-1 px-2 mb-lg-4 mb-md-2 mb-3">
           <div class="card">
             <div class="card-header p-2 ps-3">
               <div class="d-flex justify-content-between">
                 <div>
-                  <p class="text-sm mb-0 text-capitalize">Sales</p>
-                  <h4 class="mb-0">$103,430</h4>
+                  <p class="text-sm mb-0 text-capitalize">Khách Hàng Mới</p>
+                  <h4 class="mb-0">15</h4>
                 </div>
                 <div class="icon icon-md icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-lg">
-                  <i class="material-symbols-rounded opacity-10">weekend</i>
+                  <i class="material-symbols-rounded opacity-10">person_add</i>
                 </div>
               </div>
             </div>
             <hr class="dark horizontal my-0">
             <div class="card-footer p-2 ps-3">
-              <p class="mb-0 text-sm"><span class="text-success font-weight-bolder">+5% </span>than yesterday</p>
+              <p class="mb-0 text-sm"><span class="text-danger font-weight-bolder">-2% </span>so với tháng trước</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 px-lg-3-75 px-md-1 px-2 mb-lg-4 mb-md-2 mb-3">
+          <div class="card">
+            <div class="card-header p-2 ps-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="text-sm mb-0 text-capitalize">Sản Phẩm Bán Chạy</p>
+                  <h4 class="mb-0">iPhone 15 Pro Max</h4>
+                </div>
+                <div class="icon icon-md icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-lg">
+                  <i class="material-symbols-rounded opacity-10">trending_up</i>
+                </div>
+              </div>
+            </div>
+            <hr class="dark horizontal my-0">
+            <div class="card-footer p-2 ps-3">
+              <p class="mb-0 text-sm"><span class="text-success font-weight-bolder">45 </span>máy đã bán</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 px-lg-3-75 px-md-1 px-2">
+          <div class="card">
+            <div class="card-header p-2 ps-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="text-sm mb-0 text-capitalize">Tỷ lệ chuyển đổi</p>
+                  <h4 class="mb-0">3.2%</h4>
+                </div>
+                <div class="icon icon-md icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-lg">
+                  <i class="material-symbols-rounded opacity-10">query_stats</i>
+                </div>
+              </div>
+            </div>
+            <hr class="dark horizontal my-0">
+            <div class="card-footer p-2 ps-3">
+              <p class="mb-0 text-sm"><span class="text-success font-weight-bolder">+0.5% </span>so với tháng trước</p>
             </div>
           </div>
         </div>
       </div>
+      <!-- List Statistical 2 -->
       <div class="row">
-        <div class="col-lg-4 col-md-6 mt-4 mb-4">
+        <div class="col-lg-4 mb-4 col-md-6">
           <div class="card">
             <div class="card-body">
               <h6 class="mb-0 ">Website Views</h6>
@@ -344,7 +386,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 mt-4 mb-4">
+        <div class="col-lg-4 mb-4 col-md-6">
           <div class="card ">
             <div class="card-body">
               <h6 class="mb-0 "> Daily Sales </h6>
@@ -362,7 +404,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 mt-4 mb-3">
+        <div class="col-lg-4 mb-3">
           <div class="card">
             <div class="card-body">
               <h6 class="mb-0 ">Completed Tasks</h6>
@@ -790,6 +832,7 @@
       </footer>
     </div>
   </main>
+
   <div class="fixed-plugin">
     <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
       <i class="material-symbols-rounded py-2">settings</i>
@@ -797,8 +840,8 @@
     <div class="card shadow-lg">
       <div class="card-header pb-0 pt-3">
         <div class="float-start">
-          <h5 class="mt-3 mb-0">Material UI Configurator</h5>
-          <p>See our dashboard options.</p>
+          <h5 class="mt-3 mb-0">Tùy chỉnh giao diện</h5>
+          <!-- <p>See our dashboard options.</p> -->
         </div>
         <div class="float-end mt-4">
           <button class="btn btn-link text-dark p-0 fixed-plugin-close-button">
@@ -810,7 +853,7 @@
       <hr class="horizontal dark my-1">
       <div class="card-body pt-sm-3 pt-0">
         <!-- Sidebar Backgrounds -->
-        <div>
+        <!-- <div>
           <h6 class="mb-0">Sidebar Colors</h6>
         </div>
         <a href="javascript:void(0)" class="switch-trigger background-color">
@@ -822,9 +865,10 @@
             <span class="badge filter bg-gradient-warning" data-color="warning" onclick="sidebarColor(this)"></span>
             <span class="badge filter bg-gradient-danger" data-color="danger" onclick="sidebarColor(this)"></span>
           </div>
-        </a>
+        </a> -->
+
         <!-- Sidenav Type -->
-        <div class="mt-3">
+        <!-- <div class="mt-3">
           <h6 class="mb-0">Sidenav Type</h6>
           <p class="text-sm">Choose between different sidenav types.</p>
         </div>
@@ -836,28 +880,29 @@
           <button class="btn bg-gradient-dark px-3 mb-2  active ms-2" data-class="bg-white"
             onclick="sidebarType(this)">White</button>
         </div>
-        <p class="text-sm d-xl-none d-block mt-2">You can change the sidenav type just on desktop view.</p>
+        <p class="text-sm d-xl-none d-block mt-2">You can change the sidenav type just on desktop view.</p> -->
+
         <!-- Navbar Fixed -->
         <div class="mt-3 d-flex">
-          <h6 class="mb-0">Navbar Fixed</h6>
+          <h6 class="mb-0">Thanh điều hướng cố định</h6>
           <div class="form-check form-switch ps-0 ms-auto my-auto">
             <input class="form-check-input mt-1 ms-auto" type="checkbox" id="navbarFixed" onclick="navbarFixed(this)">
           </div>
         </div>
         <hr class="horizontal dark my-3">
         <div class="mt-2 d-flex">
-          <h6 class="mb-0">Light / Dark</h6>
+          <h6 class="mb-0">Sáng / Tối</h6>
           <div class="form-check form-switch ps-0 ms-auto my-auto">
             <input class="form-check-input mt-1 ms-auto" type="checkbox" id="dark-version" onclick="darkMode(this)">
           </div>
         </div>
         <hr class="horizontal dark my-sm-4">
-        <a class="btn bg-gradient-info w-100" href="https://www.creative-tim.com/product/material-dashboard-pro">Free
+        <!-- <a class="btn bg-gradient-info w-100" href="https://www.creative-tim.com/product/material-dashboard-pro">Free
           Download</a>
         <a class="btn btn-outline-dark w-100"
           href="https://www.creative-tim.com/learning-lab/bootstrap/overview/material-dashboard">View documentation</a>
         <div class="w-100 text-center">
-          <a class="github-button" href="https://github.com/creativetimofficial/material-dashboard"
+          <a class="github-button" href="#"
             data-icon="octicon-star" data-size="large" data-show-count="true"
             aria-label="Star creativetimofficial/material-dashboard on GitHub">Star</a>
           <h6 class="mt-3">Thank you for sharing!</h6>
@@ -869,7 +914,7 @@
             class="btn btn-dark mb-0 me-2" target="_blank">
             <i class="fab fa-facebook-square me-1" aria-hidden="true"></i> Share
           </a>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
