@@ -1,0 +1,37 @@
+{
+    "name": "admin-dashboard",
+    "version": "3.2.0",
+    "description": "Admin-Dashboard",
+    "main": "./index.html",
+    "type": "module",
+    "directories": {
+        "example": "root"
+    },
+    "scripts": {
+        "start": "lite-server",
+        "build": "npm run compile-scss",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "compile-scss": "sass --style expanded --source-map --precision=6 assets/scss/material-dashboard.scss assets/css/material-dashboard.css --quiet",
+        "watch-scss": "npm run compile-scss -- --watch"
+    },
+    "keywords": [
+        "material dashboard",
+        "bootstrap 5",
+        "dashboard",
+        "admin dashboard",
+        "creative tim",
+        "html dashboard",
+        "html css dashboard",
+        "web dashboard",
+        "free",
+        "free bootstrap admin dashboard",
+        "css3 kit",
+        "bootstrap dashboard",
+        "frontend",
+        "responsive bootstrap admin dashboard"
+    ],
+    "devDependencies": {
+        "lite-server": "^2.6.1",
+        "sass": "1.80.2"
+    }
+}

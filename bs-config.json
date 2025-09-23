@@ -1,0 +1,17 @@
+{
+    "server": {
+        "baseDir": "./",
+        "index": "index.html"
+    },
+    "files": [
+        "./index.html",
+        "./pages/**/*.html",
+        "./assets/css/*.css",
+        "./assets/js/*.js",
+        "./assets/scss/*.scss"
+    ],
+    "watchOptions": {
+        "ignored": "node_modules"
+    },
+    "injectChanges": true
+}
