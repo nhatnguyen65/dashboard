@@ -1,5 +1,5 @@
 async function dataDoanhThu() {
-    const res = await fetch("http://localhost:3000/revenue");
+    const res = await fetch("http://localhost:7000/revenue");
     return await res.json();
 }
 
@@ -216,7 +216,8 @@ function renderChart(data) {
                     position: "right",
                     labels: {
                         usePointStyle: true,
-                        padding: 15,
+                        pointStyle: "rectRounded", // có thể là 'circle', 'rectRounded', 'rectRot', 'triangle', ...
+                        padding: 20,
                         font: { size: 14 },
                     },
                 },

@@ -3,7 +3,7 @@ async function dataTongQuan() {
     // const res = await fetch(
     //     "https://4dbc39fd-e5d2-40c6-ba3b-06b5aa4ddc4d.mock.pstmn.io/getData"
     // );
-    const res = await fetch("http://localhost:3000/overview");
+    const res = await fetch("http://localhost:7000/overview");
     return await res.json();
 }
 
@@ -83,8 +83,8 @@ function renderChart(data) {
                     },
                     hoverBackgroundColor: "#1E88E5",
                     maxBarThickness: 50,
+                    barPercentage: 0.7, // Giảm tỷ lệ chiều rộng cột trong category (mặc định 0.9)
                     // categoryPercentage: 0.7, // Giảm tỷ lệ category (mặc định 0.8)
-                    // barPercentage: 0.7, // Giảm tỷ lệ chiều rộng cột trong category (mặc định 0.9)
                     // barThickness: "flex",
                     // data: [50, 45, 22, 28, 50, 60, 76],
                     // data: data.views,
