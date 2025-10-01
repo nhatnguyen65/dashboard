@@ -12,7 +12,8 @@
         "build": "npm run compile-scss",
         "test": "echo \"Error: no test specified\" && exit 1",
         "compile-scss": "sass --style expanded --source-map --precision=6 assets/scss/material-dashboard.scss assets/css/material-dashboard.css --quiet",
-        "watch-scss": "npm run compile-scss -- --watch"
+        "watch-scss": "npm run compile-scss -- --watch",
+        "server": "json-server --watch db/db.json --port 3000"
     },
     "keywords": [
         "material dashboard",
@@ -31,6 +32,7 @@
         "responsive bootstrap admin dashboard"
     ],
     "devDependencies": {
+        "json-server": "^1.0.0-beta.3",
         "lite-server": "^2.6.1",
         "sass": "1.80.2"
     }

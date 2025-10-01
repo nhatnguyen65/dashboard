@@ -288,8 +288,8 @@
                 </div>
             </div>
 
-            <!-- Biểu đồ xu hướng -->
             <div class="row">
+                <!-- Biểu đồ Doanh thu & Lợi nhuận -->
                 <div class="col-md-12 mb-md-4 mb-3">
                     <div class="card">
                         <div class="card-body">
@@ -297,7 +297,7 @@
                             <p class="text-sm "></p>
                             <div class="pe-2">
                                 <div class="chart">
-                                    <canvas id="chartRevenueTrend" class="chart-canvas" height="380"></canvas>
+                                    <canvas id="chart-revenue-trend" class="chart-canvas" height="380"></canvas>
                                 </div>
                             </div>
                             <div class="d-flex ">
@@ -313,10 +313,8 @@
                         </div>
                     </div> -->
                 </div>
-            </div>
 
-            <!-- Cơ cấu doanh thu -->
-            <div class="row">
+                <!-- Cơ cấu doanh thu -->
                 <div class="col-md-5 mb-md-4 mb-3">
                     <div class="card">
                         <div class="card-body">
@@ -324,7 +322,7 @@
                             <p class="text-sm">Phân bổ theo phần trăm</p>
                             <div class="pe-2">
                                 <div class="chart">
-                                    <canvas id="chartRevenuePie" class="chart-canvas" height="250"></canvas>
+                                    <canvas id="chart-revenue-pie" class="chart-canvas" height="250"></canvas>
                                 </div>
                             </div>
                             <div class="d-flex">
@@ -334,6 +332,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Biểu đồ Tăng trưởng doanh thu -->
                 <!-- <div class="col-md-6 mb-md-4 mb-3">
                     <div class="card">
                         <div class="card-header">Cơ cấu doanh thu theo thương hiệu</div>
@@ -347,11 +347,11 @@
                 <div class="col-md-7 mb-md-4 mb-3">
                     <div class="card">
                         <div class="card-body">
-                            <h6 class="mb-0">Tăng trưởng doanh thu theo tuần</h6>
-                            <p class="text-sm">a</p>
+                            <h6 class="mb-0">Tăng trưởng doanh thu theo tháng</h6>
+                            <p class="text-sm">6 tháng gần nhất</p>
                             <div class="pe-2">
                                 <div class="chart">
-                                    <canvas id="chartRevenueGrowth" class="chart-canvas" height="250"></canvas>
+                                    <canvas id="chart-revenue-growth" class="chart-canvas" height="250"></canvas>
                                 </div>
                             </div>
                             <div class="d-flex">
@@ -463,7 +463,7 @@
     <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
     <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
     <script src="../assets/js/plugins/chartjs.min.js"></script>
-    <script src="../assets/js/charts.js"></script>
+    <script src="../assets/js/charts/doanh-thu.js"></script>
     <script>
         const win = navigator.platform.indexOf('Win') > -1;
         if (win && document.querySelector('#sidenav-scrollbar')) {

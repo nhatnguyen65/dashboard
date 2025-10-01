@@ -1,0 +1,66 @@
+{
+    "overview": {
+        "views": [
+            { "label": "Thứ 2", "value": 120 },
+            { "label": "Thứ 3", "value": 300 },
+            { "label": "Thứ 4", "value": 220 },
+            { "label": "Thứ 5", "value": 180 }
+        ],
+        "revenue": [
+            { "label": "Thứ 2", "value": 1500 },
+            { "label": "Thứ 3", "value": 3200 },
+            { "label": "Thứ 4", "value": 2100 },
+            { "label": "Thứ 5", "value": 4400 }
+        ],
+        "orders": [
+            { "label": "Tháng 1", "valueCompleted": 200, "valueTotal": 250 },
+            { "label": "Tháng 2", "valueCompleted": 250, "valueTotal": 280 },
+            { "label": "Tháng 3", "valueCompleted": 180, "valueTotal": 200 },
+            { "label": "Tháng 4", "valueCompleted": 300, "valueTotal": 340 },
+            { "label": "Tháng 5", "valueCompleted": 220, "valueTotal": 260 },
+            { "label": "Tháng 6", "valueCompleted": 270, "valueTotal": 300 },
+            { "label": "Tháng 7", "valueCompleted": 260, "valueTotal": 290 },
+            { "label": "Tháng 8", "valueCompleted": 320, "valueTotal": 370 },
+            { "label": "Tháng 9", "valueCompleted": 400, "valueTotal": 420 }
+        ],
+        "brands": [
+            { "name": "iPhone", "orders": 320 },
+            { "name": "Samsung", "orders": 280 },
+            { "name": "Xiaomi", "orders": 190 },
+            { "name": "Oppo", "orders": 150 },
+            { "name": "Khác", "orders": 100 }
+        ]
+    },
+    "revenue": {
+        "revenueTrend": {
+            "labels": [
+                "Tháng 1",
+                "Tháng 2",
+                "Tháng 3",
+                "Tháng 4",
+                "Tháng 5",
+                "Tháng 6",
+                "Tháng 7",
+                "Tháng 8",
+                "Tháng 9"
+            ],
+            "dataRevenue": [100, 180, 160, 190, 220, 250, 230, 200, 260],
+            "dataProfit": [40, 60, 55, 70, 90, 100, 120, 95, 130]
+        },
+        "revenuePie": {
+            "labels": ["iPhone", "Samsung", "Xiaomi", "Oppo", "Khác"],
+            "data": [300000, 250000, 170000, 120000, 90000]
+        },
+        "revenueGrowth": {
+            "labels": [
+                "Tháng 4",
+                "Tháng 5",
+                "Tháng 6",
+                "Tháng 7",
+                "Tháng 8",
+                "Tháng 9"
+            ],
+            "data": [10, 14, 18, 22, 24, 28]
+        }
+    }
+}
