@@ -19,7 +19,6 @@ const glowPlugin = {
         });
     },
 };
-
 const crosshairPlugin = {
     id: "crosshair",
     beforeDatasetsDraw: (chart) => {
