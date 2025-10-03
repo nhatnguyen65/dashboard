@@ -58,12 +58,11 @@ function renderChart(data) {
         viewLabels.push(element.label);
         viewValues.push(element.value);
     });
-    const ctx = document.getElementById("chart-bars").getContext("2d");
     // const data = Array.from(
     //     { length: 7 },
     //     () => Math.floor(Math.random() * 500) + 50
     // );
-    new Chart(ctx, {
+    new Chart(document.getElementById("chart-bars-views"), {
         type: "bar",
         data: {
             // labels: ["T2", "T3", "T4", "T5", "T6", "T7", "CN"],
@@ -171,12 +170,11 @@ function renderChart(data) {
         revenueLabels.push(element.label);
         revenueValues.push(element.value);
     });
-    const ctx2 = document.getElementById("chart-line").getContext("2d");
     // const data2 = Array.from(
     //     { length: 7 },
     //     () => Math.floor(Math.random() * 5000) + 500
     // );
-    new Chart(ctx2, {
+    new Chart(document.getElementById("chart-line-revenues"), {
         type: "line",
         data: {
             // labels: ["T2", "T3", "T4", "T5", "T6", "T7", "CN"],
@@ -283,7 +281,6 @@ function renderChart(data) {
         ordersCompleteds.push(element.valueCompleted);
         ordersTotals.push(element.valueTotal);
     });
-    const ctx3 = document.getElementById("chart-line-tasks").getContext("2d");
     // const data3 = Array.from(
     //     { length: 12 },
     //     () => Math.floor(Math.random() * 500) + 50
@@ -292,7 +289,7 @@ function renderChart(data) {
     //     { length: 12 },
     //     () => Math.floor(Math.random() * 500) + 50
     // );
-    new Chart(ctx3, {
+    new Chart(document.getElementById("chart-line-orders"), {
         type: "line",
         data: {
             // labels: [
@@ -450,8 +447,8 @@ function renderChart(data) {
         brandNames.push(element.name);
         brandOrders.push(element.orders);
     });
-    const ctx4 = document.getElementById("chart-pie").getContext("2d");
-    new Chart(ctx4, {
+    // const ctx4 = document.getElementById("chart-pie").getContext("2d");
+    new Chart(document.getElementById("chart-pie-trademarks"), {
         type: "pie",
         data: {
             labels: brandNames,
