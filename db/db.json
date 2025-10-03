@@ -1,4 +1,19 @@
 {
+    "dashboard": {
+        "revenueToday": 53000000,
+        "ordersToday": 23,
+        "pendingOrders": 12,
+        "newCustomers": 15,
+        "bestSeller": "iPhone 15 Pro Max",
+        "conversionRate": 3.2,
+        "compare": {
+            "revenue": "+55%",
+            "orders": "+3%",
+            "pendingOrders": "+3 đơn",
+            "customers": "-2%",
+            "conversion": "+0.5%"
+        }
+    },
     "overview": {
         "views": [
             { "label": "Thứ 2", "value": 120 },

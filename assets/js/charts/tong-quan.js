@@ -1,3 +1,21 @@
+async function loadDashboard() {
+    const res = await fetch("http://localhost:7000/dashboard");
+    const data = await res.json();
+
+    document.getElementById("revenue-today").innerText =
+        data.revenueToday.toLocaleString("vi-VN", {
+            style: "currency",
+            currency: "VND",
+        });
+    document.getElementById("orders-today").innerText = data.ordersToday;
+    document.getElementById("pending-orders").innerText = data.pendingOrders;
+    document.getElementById("new-customers").innerText = data.newCustomers;
+    document.getElementById("best-seller").innerText = data.bestSeller;
+    document.getElementById("conversion-rate").innerText =
+        data.conversionRate + "%";
+}
+loadDashboard();
+
 async function dataTongQuan() {
     // mock API
     // const res = await fetch(
