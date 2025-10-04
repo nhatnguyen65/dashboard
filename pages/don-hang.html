@@ -258,59 +258,59 @@
         <!-- End Navbar -->
 
         <div class="container-fluid py-2 pt-7">
-            <!-- row pt-5 pt-sm-3 -->
+            <!-- Xem nhanh -->
             <div class="row pt-5 pt-sm-3">
-                <!-- Tổng đơn -->
+                <!-- Chờ xác nhận -->
                 <div class="col-lg col-sm-6 px-md-3-75 px-2 mb-md-4 mb-3 order-first">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h5 class="">Tổng đơn</h5>
-                            <h4 class="text-primary mb-0">1,250</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chờ xác nhận -->
-                <div class="col-lg col-sm-4 px-md-3-75 px-2 mb-md-4 mb-3 order-sm-1 order-lg-0">
-                    <div class="card">
-                        <div class="card-body text-center">
                             <h5>Chờ xác nhận</h5>
-                            <h4 class="text-secondary mb-0">150</h4>
+                            <h4 class="order-counts text-secondary mb-0">0</h4>
                         </div>
                     </div>
                 </div>
 
                 <!-- Đang giao -->
-                <div class="col-lg col-sm-4 px-md-3-75 px-2 mb-md-4 mb-3 order-sm-2 order-lg-0">
+                <div class="col-lg col-sm-4 px-md-3-75 px-2 mb-md-4 mb-3 order-sm-1 order-lg-0">
                     <div class="card">
                         <div class="card-body text-center">
                             <h5>Đang giao</h5>
-                            <h4 class="text-info mb-0">200</h4>
+                            <h4 class="order-counts text-info mb-0">0</h4>
                         </div>
                     </div>
                 </div>
 
                 <!-- Hoàn thành -->
-                <div class="col-lg col-sm-6 px-md-3-75 px-2 mb-md-4 mb-3 order-sm-0 order-lg-0">
+                <div class="col-lg col-sm-4 px-md-3-75 px-2 mb-md-4 mb-3 order-sm-2 order-lg-0">
                     <div class="card">
                         <div class="card-body text-center">
                             <h5>Hoàn thành</h5>
-                            <h4 class="text-success mb-0">820</h4>
+                            <h4 class="order-counts text-success mb-0">0</h4>
                         </div>
                     </div>
                 </div>
 
                 <!-- Đã hủy -->
-                <div class="col-lg col-sm-4 px-md-3-75 px-2 mb-md-4 mb-3 order-last">
+                <div class="col-lg col-sm-6 px-md-3-75 px-2 mb-md-4 mb-3 order-sm-0 order-lg-0">
                     <div class="card">
                         <div class="card-body text-center">
                             <h5>Đã hủy</h5>
-                            <h4 class="text-danger mb-0">60</h4>
+                            <h4 class="order-counts text-danger mb-0">0</h4>
                         </div>
                     </div>
                 </div>
 
                 <!-- Hoàn trả -->
+                <div class="col-lg col-sm-4 px-md-3-75 px-2 mb-md-4 mb-3 order-last">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5>Hoàn trả</h5>
+                            <h4 class="order-counts text-warning mb-0">0</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
                 <!-- <div class="col-lg-4 col-sm-6 px-md-3-75 px-2 mb-md-4 mb-3">
                     <div class="card">
                         <div class="card-body text-center">
@@ -321,7 +321,7 @@
                 </div> -->
             </div>
 
-            <!-- Biểu đồ đơn hàng -->
+            <!-- Biểu đồ -->
             <div class="row">
                 <!-- Biểu đồ trạng thái đơn hàng -->
                 <div class="col-md-4 mb-md-4 mb-3">
@@ -362,20 +362,20 @@
             <div class="row">
                 <div class="col-md-12 mb-md-4 mb-3">
                     <div class="card">
-                        <div class="card-header">Danh sách đơn hàng</div>
-                        <div class="card-body">
+                        <div class="card-header h6 text-dark pb-0">Danh sách đơn hàng</div>
+                        <div class="card-body pt-0">
                             <table class="table table-hover align-middle">
                                 <thead>
                                     <tr>
-                                        <th>Mã đơn</th>
-                                        <th>Khách hàng</th>
-                                        <th>Ngày đặt</th>
-                                        <th>Giá trị</th>
-                                        <th>Trạng thái</th>
-                                        <th>Hành động</th>
+                                        <th class="text-center">Mã đơn</th>
+                                        <th class="text-center">Khách hàng</th>
+                                        <th class="text-center">Ngày đặt</th>
+                                        <th class="text-center">Giá trị</th>
+                                        <th class="text-center">Trạng thái</th>
+                                        <th class="text-center">Hành động</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <!-- <tbody>
                                     <tr>
                                         <td>#DH001</td>
                                         <td>Nguyễn Văn A</td>
@@ -393,21 +393,21 @@
                                         <td>₫ 2,500,000</td>
                                         <td><span class="badge bg-danger">Đã hủy</span></td>
                                         <td>
-                                            <button class="btn btn-sm btn-outline-primary">Chi tiết</button>
+                                            <button class="btn btn-sm btn-outline-primary mb-0">Chi tiết</button>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>#DH003</td>
                                         <td>Lê Văn C</td>
                                         <td>07/09/2025</td>
-                                        <td>₫ 4,200,000</td>
-                                        <td><span class="badge bg-warning text-dark">Hoàn trả</span></td>
-                                        <td>
-                                            <button class="btn btn-sm btn-outline-primary">Chi tiết</button>
+                                        <td class="ps-4">₫ 4,200,000</td>
+                                        <td><span class="badge p-2 bg-warning text-dark">Hoàn trả</span></td>
+                                        <td class="d-flex align-content-center">
+                                            <button class="btn btn-sm btn-outline-primary mb-0">Chi tiết</button>
                                         </td>
                                     </tr>
-                                    <!-- thêm nhiều đơn khác -->
-                                </tbody>
+                                </tbody> -->
+                                <tbody id="table-orders"></tbody>
                             </table>
                         </div>
                     </div>

@@ -1,7 +1,9 @@
 async function loadDashboard() {
     const res = await fetch("http://localhost:7000/dashboard");
-    const data = await res.json();
+    return await res.json();
+}
 
+async function renderDashboards(data) {
     document.getElementById("revenue-today").innerText =
         data.revenueToday.toLocaleString("vi-VN", {
             style: "currency",
@@ -14,9 +16,12 @@ async function loadDashboard() {
     document.getElementById("conversion-rate").innerText =
         data.conversionRate + "%";
 }
-loadDashboard();
 
-async function dataTongQuan() {
+loadDashboard()
+    .then((data) => renderDashboards(data))
+    .catch((error) => console.log(error));
+
+async function dataDashboard() {
     // mock API
     // const res = await fetch(
     //     "https://4dbc39fd-e5d2-40c6-ba3b-06b5aa4ddc4d.mock.pstmn.io/getData"
@@ -69,7 +74,7 @@ const crosshairPlugin = {
         }
     },
 };
-function renderChart(data) {
+function renderDashboardCharts(data) {
     const viewLabels = [];
     const viewValues = [];
     data.views.forEach((element) => {
@@ -565,6 +570,6 @@ function renderChart(data) {
 }
 
 // dataTongQuan().then((data) => renderChart(data.stats));
-dataTongQuan()
-    .then((data) => renderChart(data))
+dataDashboard()
+    .then((data) => renderDashboardCharts(data))
     .catch((error) => console.log(error));

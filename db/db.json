@@ -77,5 +77,71 @@
             ],
             "data": [10, 14, 18, 22, 24, 28]
         }
+    },
+    "orders": {
+        "orderStats": {
+            "statuses": [
+                "Chờ xác nhận",
+                "Đang giao",
+                "Hoàn thành",
+                "Đã hủy",
+                "Hoàn trả"
+            ],
+            "data": [150, 200, 820, 60, 20]
+        },
+        "orderTrends": {
+            "labels": [
+                "Th1",
+                "Th2",
+                "Th3",
+                "Th4",
+                "Th5",
+                "Th6",
+                "Th7",
+                "Th8",
+                "Th9",
+                "Th10",
+                "Th11",
+                "Th12"
+            ],
+            "data": [100, 120, 150, 180, 200, 250, 300, 280, 270, 320, 310, 350]
+        },
+        "tableOrders": [
+            {
+                "orderId": "DH001",
+                "customerName": "Nguyễn Văn A",
+                "date": "15/09/2025",
+                "amount": 15000000,
+                "status": "Chờ xác nhận"
+            },
+            {
+                "orderId": "DH002",
+                "customerName": "Trần Thị B",
+                "date": "14/09/2025",
+                "amount": 22000000,
+                "status": "Đang giao"
+            },
+            {
+                "orderId": "DH003",
+                "customerName": "Lê Văn C",
+                "date": "13/09/2025",
+                "amount": 18000000,
+                "status": "Hoàn thành"
+            },
+            {
+                "orderId": "DH004",
+                "customerName": "Phạm Thị D",
+                "date": "12/09/2025",
+                "amount": 12000000,
+                "status": "Đã hủy"
+            },
+            {
+                "orderId": "DH005",
+                "customerName": "Hoàng Văn E",
+                "date": "11/09/2025",
+                "amount": 20000000,
+                "status": "Hoàn trả"
+            }
+        ]
     }
 }
