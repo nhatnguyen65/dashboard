@@ -261,35 +261,35 @@
             <!-- row pt-5 pt-sm-3 -->
             <!-- Tổng quan sản phẩm -->
             <div class="row pt-5 pt-sm-3">
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-md-3 col-sm-6 px-lg-3-75 px-md-1 px-2 mb-lg-4 mb-md-2 mb-3">
                     <div class="card text-center">
                         <div class="card-body">
                             <h6 class="text-muted">Tổng sản phẩm</h6>
-                            <h4 class="text-primary">2,450</h4>
+                            <h4 id="total-products" class="text-primary">0</h4>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-md-3 col-sm-6 px-lg-3-75 px-md-1 px-2 mb-lg-4 mb-md-2 mb-3">
                     <div class="card text-center">
                         <div class="card-body">
                             <h6 class="text-muted">Bán chạy nhất</h6>
-                            <h4 class="text-success">iPhone 15 Pro</h4>
+                            <h4 id="best-seller" class="text-success fs-4">0</h4>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-md-3 col-sm-6 px-lg-3-75 px-md-1 px-2 mb-lg-4 mb-md-2 mb-3">
                     <div class="card text-center">
                         <div class="card-body">
                             <h6 class="text-muted">Sắp hết hàng</h6>
-                            <h4 class="text-warning">120 sp</h4>
+                            <h4 id="low-stock" class="text-warning">0</h4>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-md-3 col-sm-6 px-lg-3-75 px-md-1 px-2 mb-lg-4 mb-md-2 mb-3">
                     <div class="card text-center">
                         <div class="card-body">
                             <h6 class="text-muted">Giá trị tồn kho</h6>
-                            <h4 class="text-danger">₫ 8,2 Tỷ</h4>
+                            <h4 id="inventory-value" class="text-danger">0</h4>
                         </div>
                     </div>
                 </div>
@@ -298,13 +298,15 @@
             <!-- Biểu đồ -->
             <div class="row">
                 <!-- Top sản phẩm bán chạy -->
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-7 px-lg-3-75 px-md-1 px-2 mb-lg-4 mb-md-2 mb-3 col-md-6">
                     <div class="card">
                         <div class="card-body">
                             <h6 class="mb-0">Top 5 sản phẩm bán chạy</h6>
                             <p class="text-sm">Theo số lượng 30 ngày gần nhất</p>
-                            <div class="chart">
-                                <canvas id="chart-top-products" class="chart-canvas" height="300"></canvas>
+                            <div class="pe-2">
+                                <div class="chart">
+                                    <canvas id="chart-top-products" class="chart-canvas" height="300"></canvas>
+                                </div>
                             </div>
                             <div class="d-flex">
                                 <i class="material-symbols-rounded text-sm my-auto me-1">schedule</i>
@@ -314,14 +316,16 @@
                     </div>
                 </div>
 
-                <!-- Xu hướng doanh số -->
-                <div class="col-lg-5 mb-4">
+                <!-- Cơ cấu tồn kho -->
+                <div class="col-lg-5 px-lg-3-75 px-md-1 px-2 mb-lg-4 mb-md-2 mb-3 col-md-6">
                     <div class="card">
                         <div class="card-body">
-                            <h6 class="mb-0">Xu hướng doanh số theo tháng</h6>
-                            <p class="text-sm">12 tháng gần nhất</p>
-                            <div class="chart">
-                                <canvas id="chart-sales-trend" class="chart-canvas" height="300"></canvas>
+                            <h6 class="mb-0">Cơ cấu tồn kho theo danh mục</h6>
+                            <p class="text-sm">Tỉ trọng theo nhóm hàng</p>
+                            <div class="pe-2">
+                                <div class="chart">
+                                    <canvas id="chart-inventory-structure" class="chart-canvas" height="300"></canvas>
+                                </div>
                             </div>
                             <div class="d-flex">
                                 <i class="material-symbols-rounded text-sm my-auto me-1">schedule</i>
@@ -331,14 +335,16 @@
                     </div>
                 </div>
 
-                <!-- Cơ cấu tồn kho -->
-                <div class="col-lg-3 mb-4">
+                <!-- Xu hướng doanh số -->
+                <div class="col-lg-12 px-lg-3-75 px-md-1 px-2 mb-lg-4 mb-md-2 mb-3">
                     <div class="card">
                         <div class="card-body">
-                            <h6 class="mb-0">Cơ cấu tồn kho theo danh mục</h6>
-                            <p class="text-sm">Tỉ trọng theo nhóm hàng</p>
-                            <div class="chart">
-                                <canvas id="chart-inventory-structure" class="chart-canvas" height="300"></canvas>
+                            <h6 class="mb-0">Xu hướng doanh số theo tháng</h6>
+                            <p class="text-sm">12 tháng gần nhất</p>
+                            <div class="pe-2">
+                                <div class="chart">
+                                    <canvas id="chart-sales-trend" class="chart-canvas" height="300"></canvas>
+                                </div>
                             </div>
                             <div class="d-flex">
                                 <i class="material-symbols-rounded text-sm my-auto me-1">schedule</i>
@@ -353,21 +359,21 @@
             <div class="row">
                 <div class="col-md-12 mb-4">
                     <div class="card">
-                        <div class="card-header">Danh sách sản phẩm</div>
-                        <div class="card-body">
+                        <div class="card-header h6 text-dark pb-0">Danh sách sản phẩm</div>
+                        <div class="card-body pt-0">
                             <table class="table table-hover align-middle">
                                 <thead>
                                     <tr>
-                                        <th>Mã SP</th>
-                                        <th>Tên sản phẩm</th>
-                                        <th>Danh mục</th>
-                                        <th>Giá</th>
-                                        <th>Tồn kho</th>
-                                        <th>Trạng thái</th>
-                                        <th>Hành động</th>
+                                        <th class="text-center">Mã SP</th>
+                                        <th class="text-center">Tên sản phẩm</th>
+                                        <th class="text-center">Danh mục</th>
+                                        <th class="text-center">Giá</th>
+                                        <th class="text-center">Tồn kho</th>
+                                        <th class="text-center">Trạng thái</th>
+                                        <th class="text-center">Hành động</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <!-- <tbody>
                                     <tr>
                                         <td>SP001</td>
                                         <td>iPhone 15 Pro</td>
@@ -395,8 +401,8 @@
                                         <td><span class="badge bg-danger">Hết hàng</span></td>
                                         <td><button class="btn btn-sm btn-outline-primary">Chi tiết</button></td>
                                     </tr>
-                                    <!-- thêm sản phẩm khác -->
-                                </tbody>
+                                </tbody> -->
+                                <tbody id="table-products"></tbody>
                             </table>
                         </div>
                     </div>
@@ -409,10 +415,11 @@
                     <div class="card">
                         <div class="card-body">
                             <h6>Sản phẩm mới ra mắt</h6>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Xiaomi 14 Ultra</li>
+                            <ul id="new-arrivals" class="list-group list-group-flush">
+                                <p class="ms-1">Không có</p>
+                                <!-- <li class="list-group-item">Xiaomi 14 Ultra</li>
                                 <li class="list-group-item">Sony WH-1000XM5</li>
-                                <li class="list-group-item">Apple Watch Ultra 2</li>
+                                <li class="list-group-item">Apple Watch Ultra 2</li> -->
                             </ul>
                         </div>
                     </div>
@@ -422,10 +429,11 @@
                     <div class="card">
                         <div class="card-body">
                             <h6>Sản phẩm khuyến mãi</h6>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">iPad Air M2 - giảm 15%</li>
+                            <ul id="promotions" class="list-group list-group-flush">
+                                <p class="ms-1">Không có</p>
+                                <!-- <li class="list-group-item">iPad Air M2 - giảm 15%</li>
                                 <li class="list-group-item">MacBook Air M3 - giảm 10%</li>
-                                <li class="list-group-item">Tai nghe Beats Fit Pro - giảm 20%</li>
+                                <li class="list-group-item">Tai nghe Beats Fit Pro - giảm 20%</li> -->
                             </ul>
                         </div>
                     </div>
@@ -435,17 +443,18 @@
                     <div class="card">
                         <div class="card-body">
                             <h6>Sản phẩm ngừng kinh doanh</h6>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">iPhone 13 Mini</li>
+                            <ul id="discontinued" class="list-group list-group-flush">
+                                <p class="ms-1">Không có</p>
+                                <!-- <li class="list-group-item">iPhone 13 Mini</li>
                                 <li class="list-group-item">iPad Pro 2020</li>
-                                <li class="list-group-item">Samsung S20 Ultra</li>
+                                <li class="list-group-item">Samsung S20 Ultra</li> -->
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <footer class="footer py-4  ">
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-lg-between">

@@ -143,5 +143,119 @@
                 "status": "Hoàn trả"
             }
         ]
+    },
+    "products": {
+        "productSummary": {
+            "totalProducts": 2450,
+            "bestSeller": "iPhone 15 Pro",
+            "lowStock": 120,
+            "inventoryValue": 82000000
+        },
+        "topProducts": {
+            "labels": [
+                "iPhone 15 Pro",
+                "Galaxy Z Flip 6",
+                "AirPods Pro 2",
+                "MacBook Air M3",
+                "iPad Air M2"
+            ],
+            "data": [1200, 950, 780, 650, 500]
+        },
+        "inventoryStructure": {
+            "labels": ["Điện thoại", "Laptop", "Tablet", "Phụ kiện"],
+            "data": [1200, 800, 500, 950]
+        },
+        "salesTrend": {
+            "labels": [
+                "Tháng 1",
+                "Tháng 2",
+                "Tháng 3",
+                "Tháng 4",
+                "Tháng 5",
+                "Tháng 6",
+                "Tháng 7",
+                "Tháng 8",
+                "Tháng 9",
+                "Tháng 10",
+                "Tháng 11",
+                "Tháng 12"
+            ],
+            "data": [120, 150, 180, 200, 250, 270, 320, 300, 280, 350, 400, 420]
+        },
+        "tableProducts": [
+            {
+                "id": "SP001",
+                "name": "iPhone 15 Pro",
+                "category": "Điện thoại",
+                "price": 28000000,
+                "stock": 250
+            },
+            {
+                "id": "SP002",
+                "name": "Samsung Galaxy Z Flip 6",
+                "category": "Điện thoại",
+                "price": 24000000,
+                "stock": 15
+            },
+            {
+                "id": "SP003",
+                "name": "AirPods Pro 2",
+                "category": "Phụ kiện",
+                "price": 6000000,
+                "stock": 0
+            },
+            {
+                "id": "SP004",
+                "name": "MacBook Air M3",
+                "category": "Laptop",
+                "price": 32000000,
+                "stock": 75
+            },
+            {
+                "id": "SP005",
+                "name": "iPad Air M2",
+                "category": "Tablet",
+                "price": 19000000,
+                "stock": 30
+            },
+            {
+                "id": "SP006",
+                "name": "Apple Watch Series 10",
+                "category": "Phụ kiện",
+                "price": 14000000,
+                "stock": 10
+            },
+            {
+                "id": "SP007",
+                "name": "MacBook Pro M3 Max",
+                "category": "Laptop",
+                "price": 56000000,
+                "stock": 5
+            },
+            {
+                "id": "SP008",
+                "name": "iPhone 14",
+                "category": "Điện thoại",
+                "price": 18000000,
+                "stock": 0
+            }
+        ],
+        "productCategories": {
+            "newArrivals": [
+                "Xiaomi 14 Ultra",
+                "Sony WH-1000XM5",
+                "Apple Watch Ultra 2"
+            ],
+            "promotions": [
+                "iPad Air M2 - giảm 15%",
+                "MacBook Air M3 - giảm 10%",
+                "Tai nghe Beats Fit Pro - giảm 20%"
+            ],
+            "discontinued": [
+                "iPhone 13 Mini",
+                "iPad Pro 2020",
+                "Samsung S20 Ultra"
+            ]
+        }
     }
 }
