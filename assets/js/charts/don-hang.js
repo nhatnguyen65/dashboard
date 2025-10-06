@@ -1,16 +1,14 @@
 async function dataOrder() {
-    res = await fetch("http://localhost:7000/orders");
+    const res = await fetch("http://localhost:7000/orders");
     return await res.json();
 }
 
-async function loadOrder(orderData) {
+async function renderOrders({ data }) {
     const orderCounts = document.querySelectorAll(".card .order-counts");
-    orderCounts.forEach(
-        (element, index) => (element.innerText = orderData[index])
-    );
+    orderCounts.forEach((element, index) => (element.innerText = data[index]));
 }
 dataOrder()
-    .then((data) => loadOrder(data.orderStats.data))
+    .then(({ orderStats }) => renderOrders(orderStats))
     .catch((error) => console.log(error));
 
 const glowPlugin = {
@@ -252,9 +250,9 @@ function getStatusClass(status) {
 function formatCurrency(value) {
     return "₫ " + value.toLocaleString("vi-VN");
 }
-async function tableOrder(tableData) {
+async function tableOrder(tableOrders) {
     const tbody = document.querySelector("#table-orders");
-    tbody.innerHTML = tableData
+    tbody.innerHTML = tableOrders
         .map(
             (order) => `
                 <tr>
@@ -276,5 +274,5 @@ async function tableOrder(tableData) {
         .join("");
 }
 dataOrder()
-    .then((data) => tableOrder(data.tableOrders))
+    .then(({ tableOrders }) => tableOrder(tableOrders))
     .catch((error) => console.log(error));
