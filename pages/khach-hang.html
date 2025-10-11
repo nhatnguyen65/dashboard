@@ -260,47 +260,43 @@
         <div class="container-fluid py-2 pt-7">
             <!-- row pt-5 pt-sm-3 -->
             <div class="row pt-5 pt-sm-3">
-                <div class="col-lg col-sm-6 px-md-3-75 px-2 mb-md-4 mb-3 order-first">
+                <div class="col-lg col-sm-4 px-md-3-75 px-2 mb-md-4 mb-3">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h5 class="">Tổng khách hàng</h5>
-                            <h4 class="text-primary mb-0">52,340</h4>
+                            <h6 class="">Tổng khách hàng</h6>
+                            <h4 id="total-customers" class="text-primary mb-0">0</h4>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg col-sm-4 px-md-3-75 px-2 mb-md-4 mb-3 order-sm-1 order-lg-0">
+                <div class="col-lg col-sm-4 px-md-3-75 px-2 mb-md-4 mb-3">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h5>Khách hàng mới</h5>
-                            <h4 class="text-success mb-0">1,280</h4>
+                            <h6>Khách hàng mới</h6>
+                            <h4 id="new-customers" class="text-success mb-0">0</h4>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg col-sm-4 px-md-3-75 px-2 mb-md-4 mb-3 order-sm-2 order-lg-0">
+                <div class="col-lg col-sm-4 px-md-3-75 px-2 mb-md-4 mb-3">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h5>Hoạt động hàng tháng</h5>
-                            <h4 class="text-info mb-0">18,900</h4>
+                            <h6>Hay hoạt động</h6>
+                            <h4 id="monthly-active" class="text-info mb-0">0</h4>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg col-sm-6 px-md-3-75 px-2 mb-md-4 mb-3 order-sm-0 order-lg-0">
+                <div class="col-lg col-sm-6 px-md-3-75 px-2 mb-md-4 mb-3">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h5>Tỷ lệ rời bỏ</h5>
-                            <h4 class="text-danger mb-0">2.4%</h4>
+                            <h6>Tỷ lệ rời bỏ</h6>
+                            <h4 id="churn-rate" class="text-danger mb-0">0</h4>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg col-sm-4 px-md-3-75 px-2 mb-md-4 mb-3 order-last">
+                <div class="col-lg col-sm-6 px-md-3-75 px-2 mb-md-4 mb-3">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h5>CLV trung vị</h5>
-                            <h4 class="text-secondary mb-0">₫ 3.2M</h4>
+                            <h6>CLV trung vị</h6>
+                            <h4 id="median-clv" class="text-secondary mb-0">0</h4>
                         </div>
                     </div>
                 </div>
@@ -388,15 +384,15 @@
                             <table class="table table-hover align-middle">
                                 <thead>
                                     <tr>
-                                        <th>Tên</th>
-                                        <th>Email</th>
-                                        <th>Lần mua gần nhất</th>
-                                        <th>Tổng chi tiêu</th>
-                                        <th>Phân loại</th>
-                                        <th>Hành động</th>
+                                        <th class="text-center">Tên</th>
+                                        <th class="ps-6">Email</th>
+                                        <th class="text-center">Lần mua gần nhất</th>
+                                        <th class="text-center">Tổng chi tiêu</th>
+                                        <th class="text-center">Phân loại</th>
+                                        <th class="text-center">Hành động</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <!-- <tbody>
                                     <tr>
                                         <td>Nguyễn Văn A</td>
                                         <td>a.nguyen@example.com</td>
@@ -421,7 +417,8 @@
                                         <td><span class="badge bg-danger">Churn</span></td>
                                         <td><button class="btn btn-sm btn-outline-primary">Xem</button></td>
                                     </tr>
-                                </tbody>
+                                </tbody> -->
+                                <tbody id="table-customers"></tbody>
                             </table>
                         </div>
                     </div>

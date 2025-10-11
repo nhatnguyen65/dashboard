@@ -257,5 +257,74 @@
                 "Samsung S20 Ultra"
             ]
         }
+    },
+    "customers": {
+        "customerSummary": {
+            "totalCustomers": 5234,
+            "newCustomers": 128,
+            "monthlyActive": 189,
+            "churnRate": 2.4,
+            "medianCLV": 3200000
+        },
+        "customerSegmentation": {
+            "labels": ["New", "Active", "Churn", "VIP"],
+            "data": [22, 58, 12, 8]
+        },
+        "behaviorTrend": {
+            "labels": [
+                "Tháng 1",
+                "Tháng 2",
+                "Tháng 3",
+                "Tháng 4",
+                "Tháng 5",
+                "Tháng 6",
+                "Tháng 7",
+                "Tháng 8",
+                "Tháng 9",
+                "Tháng 10",
+                "Tháng 11",
+                "Tháng 12"
+            ],
+            "series": {
+                "visit": [
+                    120, 150, 180, 210, 260, 300, 330, 320, 300, 360, 390, 420
+                ],
+                "addToCart": [
+                    40, 55, 60, 70, 90, 100, 115, 110, 100, 130, 145, 160
+                ],
+                "purchase": [20, 28, 30, 38, 50, 58, 65, 62, 60, 72, 80, 90]
+            }
+        },
+        "purchaseFrequency": {
+            "labels": ["1-2 đơn", "3-5 đơn", "6-10 đơn", ">10 đơn"],
+            "data": [18000, 12000, 6000, 2000]
+        },
+        "clvBuckets": {
+            "labels": ["P0-25", "P25-50", "P50-75", "P75-90", "P90-100"],
+            "data": [15, 25, 30, 20, 10]
+        },
+        "tableCustomers": [
+            {
+                "name": "Nguyễn Văn A",
+                "email": "a.nguyen@example.com",
+                "joinDate": "01/09/2025",
+                "totalSpent": 12500000,
+                "status": "Active"
+            },
+            {
+                "name": "Trần Thị B",
+                "email": "b.tran@example.com",
+                "joinDate": "28/08/2025",
+                "totalSpent": 2300000,
+                "status": "New"
+            },
+            {
+                "name": "Lê Văn C",
+                "email": "c.le@example.com",
+                "joinDate": "15/08/2025",
+                "totalSpent": 750000,
+                "status": "Churn"
+            }
+        ]
     }
 }
