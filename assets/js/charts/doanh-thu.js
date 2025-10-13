@@ -1,7 +1,32 @@
-async function dataDoanhThu() {
+async function dataRevenue() {
     const res = await fetch("http://localhost:7000/revenue");
     return await res.json();
 }
+
+function formatCurrency(value) {
+    return `₫ ${value.toLocaleString("vi-VN")}`;
+}
+
+async function renderRevenues(revenueSummary) {
+    document.querySelector("#total-revenue").innerText = formatCurrency(
+        revenueSummary.revenue
+    );
+    document.querySelector("#total-profit").innerText = formatCurrency(
+        revenueSummary.profit
+    );
+    document.querySelector("#avg-order-value").innerText = formatCurrency(
+        revenueSummary.averageOrderValue
+    );
+    document.querySelector(
+        "#conversion-rate"
+    ).innerText = `${revenueSummary.conversionRate}%`;
+}
+
+dataRevenue()
+    .then(({ revenueSummary }) => renderRevenues(revenueSummary))
+    .catch((error) =>
+        console.log(`Lỗi trang Doanh Thu, renderRevenues: ${error}`)
+    );
 
 const glowPlugin = {
     id: "glow",
@@ -47,7 +72,7 @@ const crosshairPlugin = {
         }
     },
 };
-function renderChart(data) {
+async function renderRevenueCharts(data) {
     // Biểu đồ Doanh thu & Lợi nhuận theo tháng
     new Chart(document.getElementById("chart-revenue-trend"), {
         type: "line",
@@ -308,7 +333,29 @@ function renderChart(data) {
         },
     });
 }
+dataRevenue()
+    .then((data) => renderRevenueCharts(data))
+    .catch((error) =>
+        console.log(`Lỗi trang Doanh Thu, renderRevenueCharts: ${error}`)
+    );
 
-dataDoanhThu()
-    .then((data) => renderChart(data))
-    .catch((error) => console.log(error));
+async function tableTopRevenue(tableRevenues) {
+    const tbody = document.querySelector("#table-revenue");
+    tbody.innerHTML = tableRevenues
+        .map(
+            (revenue) => `
+            <tr>
+                <td class="ps-5">${revenue.name}</td>
+                <td class="text-center">${revenue.quantitySold}</td>
+                <td class="text-center">${formatCurrency(revenue.revenue)}</td>
+                <td class="text-center">${revenue.share}%</td>
+            </tr>
+        `
+        )
+        .join("");
+}
+dataRevenue()
+    .then(({ tableRevenues }) => tableTopRevenue(tableRevenues))
+    .catch((error) =>
+        console.log(`Lỗi trang Doanh Thu, tableTopProducts: ${error}`)
+    );

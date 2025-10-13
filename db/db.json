@@ -46,38 +46,6 @@
             { "name": "Khác", "orders": 100 }
         ]
     },
-    "revenue": {
-        "revenueTrend": {
-            "labels": [
-                "Tháng 1",
-                "Tháng 2",
-                "Tháng 3",
-                "Tháng 4",
-                "Tháng 5",
-                "Tháng 6",
-                "Tháng 7",
-                "Tháng 8",
-                "Tháng 9"
-            ],
-            "dataRevenue": [100, 180, 160, 190, 220, 250, 230, 200, 260],
-            "dataProfit": [40, 60, 55, 70, 90, 100, 120, 95, 130]
-        },
-        "revenuePie": {
-            "labels": ["iPhone", "Samsung", "Xiaomi", "Oppo", "Khác"],
-            "data": [300000, 250000, 170000, 120000, 90000]
-        },
-        "revenueGrowth": {
-            "labels": [
-                "Tháng 4",
-                "Tháng 5",
-                "Tháng 6",
-                "Tháng 7",
-                "Tháng 8",
-                "Tháng 9"
-            ],
-            "data": [10, 14, 18, 22, 24, 28]
-        }
-    },
     "orders": {
         "orderStats": {
             "statuses": [
@@ -324,6 +292,106 @@
                 "joinDate": "15/08/2025",
                 "totalSpent": 750000,
                 "status": "Churn"
+            }
+        ]
+    },
+    "revenue": {
+        "revenueSummary": {
+            "revenue": 120000000,
+            "profit": 45000000,
+            "averageOrderValue": 750000,
+            "conversionRate": 3.8
+        },
+        "revenueTrend": {
+            "labels": [
+                "Tháng 1",
+                "Tháng 2",
+                "Tháng 3",
+                "Tháng 4",
+                "Tháng 5",
+                "Tháng 6",
+                "Tháng 7",
+                "Tháng 8",
+                "Tháng 9"
+            ],
+            "dataRevenue": [100, 180, 160, 190, 220, 250, 230, 200, 260],
+            "dataProfit": [40, 60, 55, 70, 90, 100, 120, 95, 130]
+        },
+        "revenuePie": {
+            "labels": ["iPhone", "Samsung", "Xiaomi", "Oppo", "Khác"],
+            "data": [300000, 250000, 170000, 120000, 90000]
+        },
+        "revenueGrowth": {
+            "labels": [
+                "Tháng 4",
+                "Tháng 5",
+                "Tháng 6",
+                "Tháng 7",
+                "Tháng 8",
+                "Tháng 9"
+            ],
+            "data": [10, 14, 18, 22, 24, 28]
+        },
+        "tableRevenues": [
+            {
+                "name": "iPhone 14 Pro",
+                "quantitySold": 320,
+                "revenue": 9600000,
+                "share": 25
+            },
+            {
+                "name": "Samsung Galaxy S23 Ultra",
+                "quantitySold": 280,
+                "revenue": 8700000,
+                "share": 22
+            },
+            {
+                "name": "MacBook Air M2",
+                "quantitySold": 150,
+                "revenue": 7500000,
+                "share": 19
+            },
+            {
+                "name": "iPad Pro 11”",
+                "quantitySold": 200,
+                "revenue": 6400000,
+                "share": 16
+            },
+            {
+                "name": "Apple Watch Series 9",
+                "quantitySold": 210,
+                "revenue": 5200000,
+                "share": 13
+            },
+            {
+                "name": "AirPods Pro 2",
+                "quantitySold": 330,
+                "revenue": 4100000,
+                "share": 10
+            },
+            {
+                "name": "Xiaomi 13T Pro",
+                "quantitySold": 180,
+                "revenue": 3900000,
+                "share": 9
+            },
+            {
+                "name": "Asus ROG Phone 8",
+                "quantitySold": 120,
+                "revenue": 3600000,
+                "share": 8
+            },
+            {
+                "name": "Sony WH-1000XM5",
+                "quantitySold": 140,
+                "revenue": 3400000,
+                "share": 7
+            },
+            {
+                "name": "Dell XPS 13",
+                "quantitySold": 90,
+                "revenue": 3100000,
+                "share": 6
             }
         ]
     }

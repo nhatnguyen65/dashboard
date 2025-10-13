@@ -264,7 +264,7 @@
                     <div class="card">
                         <div class="card-body text-center">
                             <h5>Doanh thu</h5>
-                            <h4 class="text-success">₫ 120,000,000</h4>
+                            <h4 id="total-revenue" class="text-success">0</h4>
                         </div>
                     </div>
                 </div>
@@ -272,7 +272,7 @@
                     <div class="card">
                         <div class="card-body text-center">
                             <h5>Lợi nhuận</h5>
-                            <h4 class="text-primary">₫ 45,000,000</h4>
+                            <h4 id="total-profit" class="text-primary">0</h4>
                         </div>
                     </div>
                 </div>
@@ -280,7 +280,7 @@
                     <div class="card">
                         <div class="card-body text-center">
                             <h5>Giá trị TB/đơn</h5>
-                            <h4 class="text-info">₫ 750,000</h4>
+                            <h4 id="avg-order-value" class="text-info">0</h4>
                         </div>
                     </div>
                 </div>
@@ -288,7 +288,7 @@
                     <div class="card">
                         <div class="card-body text-center">
                             <h5>Tỷ lệ chuyển đổi</h5>
-                            <h4 class="text-warning">3.8%</h4>
+                            <h4 id="conversion-rate" class="text-warning">0</h4>
                         </div>
                     </div>
                 </div>
@@ -384,21 +384,21 @@
                             <table class="table table-hover">
                                 <thead>
                                     <tr>
-                                        <th>Sản phẩm</th>
-                                        <th>Số đơn</th>
-                                        <th>Doanh thu</th>
-                                        <th>Tỷ lệ</th>
+                                        <th class="text-center">Sản phẩm</th>
+                                        <th class="text-center">Số đơn</th>
+                                        <th class="text-center">Doanh thu</th>
+                                        <th class="text-center">Tỷ lệ</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <!-- <tbody>
                                     <tr>
                                         <td>iPhone 14 Pro</td>
                                         <td>320</td>
                                         <td>₫ 9,600,000</td>
                                         <td>25%</td>
                                     </tr>
-                                    <!-- Thêm các dòng khác -->
-                                </tbody>
+                                </tbody> -->
+                                <tbody id="table-revenue"></tbody>
                             </table>
                         </div>
                     </div>
@@ -406,7 +406,7 @@
             </div>
         </div>
 
-        <footer class="footer py-4  ">
+        <footer class="footer py-4">
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-lg-between">
                     <div class="col-lg-6 mb-lg-0 mb-4">
