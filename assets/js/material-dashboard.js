@@ -937,26 +937,27 @@ function darkMode(el) {
     }
 }
 // Khi trang load lại, kiểm tra dark mode trong localStorage
-window.addEventListener("DOMContentLoaded", () => {
+function initDarkMode() {
     const darkToggle = document.getElementById("dark-version");
+    if (!darkToggle) return; // nếu trang chưa có nút này thì thôi
+
     const darkModeEnabled = localStorage.getItem("darkMode") === "true";
 
-    // Nếu người dùng đã bật dark mode trước đó
+    // Nếu đã bật dark mode trước đó
     if (darkModeEnabled) {
-        darkToggle.checked = true; // để nút bật
-        darkMode(darkToggle); // gọi lại hàm của bạn để áp theme tối
+        darkToggle.checked = true;
+        darkMode(darkToggle); // Gọi lại hàm chính của bạn để áp dụng theme
     }
 
-    // Mỗi khi người dùng bấm nút
+    // Khi người dùng bấm nút
     darkToggle.addEventListener("click", function () {
-        // Lưu trạng thái mới vào localStorage
         const isDarkNow = this.checked;
         localStorage.setItem("darkMode", isDarkNow);
     });
-});
+}
+initDarkMode();
 
 // side bullets
-
 const indicators = document.querySelectorAll(".indicator");
 const sections = document.querySelectorAll("section");
 
