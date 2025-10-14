@@ -11,7 +11,7 @@ async function showLoginModal() {
     // Nếu modal chưa có trong DOM thì fetch và gắn vào body
     if (!document.querySelector("#loginModal")) {
         try {
-            const res = await fetch("pages/login-modal.html");
+            const res = await fetch("/components/login-modal.render.html");
             if (!res.ok) throw new Error(`Không tải được modal: ${res.status}`);
             const html = await res.text();
             document.body.insertAdjacentHTML("beforeend", html);
