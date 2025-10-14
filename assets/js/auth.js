@@ -1,3 +1,5 @@
+import { loginModalHTML } from "../components/login-modal.js";
+
 const API_URL = "http://localhost:7000/admins"; // Mock API JSON Server
 const app = document.querySelector("main");
 
@@ -8,18 +10,10 @@ function isLoggedIn() {
 
 // Hiển thị modal login
 async function showLoginModal() {
-    // Nếu modal chưa có trong DOM thì fetch và gắn vào body
+    // Nếu modal chưa có trong DOM thì gắn trực tiếp từ biến HTML
     if (!document.querySelector("#loginModal")) {
-        try {
-            const res = await fetch("/assets/components/login-modal.html");
-            if (!res.ok) throw new Error(`Không tải được modal: ${res.status}`);
-            const html = await res.text();
-            document.body.insertAdjacentHTML("beforeend", html);
-            bindLoginEvents();
-        } catch (err) {
-            console.error("Lỗi tải modal:", err);
-            return;
-        }
+        document.body.insertAdjacentHTML("beforeend", loginModalHTML);
+        bindLoginEvents();
     }
 
     // Khởi tạo và hiển thị modal Bootstrap
