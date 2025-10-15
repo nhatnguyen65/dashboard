@@ -66,7 +66,7 @@ export const loginModalHTML = `
                     </form>
                 </div>
 
-                <div class="modal-footer border-0 justify-content-center">
+                <div class="modal-footer border-0 justify-content-center pt-0">
                     <small class="text-muted">Hệ thống quản trị Dashboard</small>
                 </div>
             </div>

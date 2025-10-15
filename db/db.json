@@ -8,9 +8,15 @@
         },
         {
             "id": 2,
-            "username": "manager",
+            "username": "admin2",
             "password": "654321",
-            "role": "manager"
+            "role": "admin"
+        },
+        {
+            "id": 3,
+            "username": "admin3",
+            "password": "1",
+            "role": "admin"
         }
     ],
     "dashboard": {
