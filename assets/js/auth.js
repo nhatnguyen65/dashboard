@@ -2,6 +2,7 @@ import { loginModalHTML } from "../components/login-modal.js";
 
 const API_URL = "http://localhost:7000/admins"; // Mock API JSON Server
 const app = document.querySelector("main");
+const form = document.querySelector("#login-form");
 
 // Kiểm tra đăng nhập
 function isLoggedIn() {
@@ -83,3 +84,25 @@ async function checkAuth() {
         document.dispatchEvent(new CustomEvent("admin-logged-in"));
     }
 }
+
+// Gắn sự kiện logout khi DOM sẵn sàng
+document.addEventListener("DOMContentLoaded", () => {
+    const logoutBtn = document.getElementById("logoutBtn");
+
+    if (logoutBtn) {
+        logoutBtn.addEventListener("click", async (e) => {
+            // e.preventDefault();
+
+            // Xóa token
+            sessionStorage.removeItem("admin_token");
+
+            // Ẩn nội dung dashboard
+            app.style.visibility = "hidden";
+            app.style.overflow = "hidden";
+            document.querySelector("#login-form")?.reset();
+
+            // Gọi lại modal đăng nhập
+            await showLoginModal();
+        });
+    }
+});

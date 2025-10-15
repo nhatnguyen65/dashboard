@@ -4362,6 +4362,10 @@ fieldset:disabled .btn {
   border-radius: var(--bs-dropdown-border-radius);
 }
 
+.dropdown-menu {
+  cursor: default !important;
+}
+
 .dropdown-menu[data-bs-popper] {
   top: 100%;
   left: 0;
